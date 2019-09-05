@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Intro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
+</head>
+<body>
+    <header class="contenedor contenido">
+        <div class="video">
+            <video src="medios/video_fondo.mp4" muted autoplay loop></video>
+        </div>
+        <div class="cubierta"></div>
+        <div class="login">
+            <form action="index.html" class="formulario">
+                <h1>Login</h1>
+                <div class="texto">
+                    <input type="text" >
+                    <span data-placeholder="Nombre Usuario"></span>
+                </div>
+                <div class="texto">
+                    <input type="password">
+                    <span data-placeholder="contraseña"></span>
+                </div>
+                <input type="submit" class="boton" value="Entrar">
+                <div class="nueva_cuenta">
+                    ¿No tienes cuenta?
+                    <a href="#">Registratse</a>
+                </div>
+
+            </form>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        $(".texto input").on("focus",function(){
+            $(this).addClass("focus");
+        })
+
+        $(".texto input").on("blur",function(){
+            if($(this).val()== "")
+            $(this).removeClass("focus");
+        })
+    </script>
+</body>
+</html>

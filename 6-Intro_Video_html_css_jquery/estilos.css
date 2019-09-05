@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color:#333;
+    overflow-x: hidden;
+}
+
+.contenedor{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contenido{
+    max-width: 49rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.cubierta{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #333;
+    z-index: 1;
+    opacity: .6;
+}
+
+.login{
+    z-index: 2;
+    position: absolute;
+    left: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.formulario{
+    width: 340px;
+    height: 520px;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+
+.login h1{
+    font-size: 35px;
+    margin-bottom: 70px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+.texto{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+    z-index: 1;
+}
+
+.texto input{
+    font-size: 15px;
+    color: #2b5876;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.texto span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.texto span::after{
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 5px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+    color: #4e4376;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.boton{
+    display: block;
+    background: linear-gradient(to right, #4e4376,#2b5876,#4e4376);
+    background-size: 200%;
+    color:white;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 40px;
+}
+
+.boton:hover{
+    background-position: right;
+}
+
+.nueva_cuenta{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+}
+@media (max-width:960px){
+    .contenido{
+        padding:  0 3rem 0 3rem;
+    }
+}
