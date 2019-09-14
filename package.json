@@ -1,0 +1,29 @@
+{
+  "name": "proyecto_cinema",
+  "version": "1.0.0",
+  "description": "Proyecto cinema backend desde node con pg y express ",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "pg": "^7.12.1",
+    "pg-promise": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/pg": "^7.11.1",
+    "@types/pg-promise": "^5.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrissUD/Proyecto_Web_Cine.git"
+  },
+  "author": "Cristian_Patiño,Juan_Guaba,Paula_Avendaño,Neider_",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrissUD/Proyecto_Web_Cine/issues"
+  },
+  "homepage": "https://github.com/CrissUD/Proyecto_Web_Cine#readme"
+}
