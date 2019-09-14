@@ -28,16 +28,16 @@ body{
 
 .video{
     position: absolute;
-    top: 0;
+    top: -25px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
     overflow: hidden;
 }
 
 .video video{
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    min-height: 110%;
 }
 
 .cubierta{
@@ -83,7 +83,7 @@ body{
 
 .texto input{
     font-size: 15px;
-    color: #2b5876;
+    color: #404040;
     border: none;
     outline: none;
     background: none;
@@ -109,13 +109,13 @@ body{
     left: 5px;
     width: 0%;
     height: 2px;
-    background: linear-gradient(120deg, #3498db, #8e44ad);
+    background: linear-gradient(120deg, #e50914, #b1060f);
     transition: .5s;
 }
 
 .focus + span::before{
     top: -5px;
-    color: #4e4376;
+    color: #e50914;
 }
 
 .focus + span::after{
@@ -124,7 +124,7 @@ body{
 
 .boton{
     display: block;
-    background: linear-gradient(to right, #4e4376,#2b5876,#4e4376);
+    background: linear-gradient(to right, #b1060f,#e50914,#b1060f);
     background-size: 200%;
     color:white;
     width: 100%;
