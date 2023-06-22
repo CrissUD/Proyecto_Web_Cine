@@ -5,8 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "dotenv": "^8.1.0",
-    "pg": "^7.12.1",
-    "pg-promise": "^9.1.4"
+    "pg": "^8.11.0",
+    "pg-promise": "^11.5.0"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
